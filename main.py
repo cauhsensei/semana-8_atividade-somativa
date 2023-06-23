@@ -105,7 +105,9 @@ def gerenciar_dados(dados, tipo_dado, campos):
             print("Opção inválida! Tente novamente.")
 
 def apresentar_menu_operacoes(tipo_dado):
-    print(f"\n-- Gerenciar {tipo_dado} --")
+    print("\n###########################################")
+    print(f"\nMenu de Operações-- Gerenciar {tipo_dado}")
+    print("\n###########################################\n")
     print("1. Incluir")
     print("2. Listar")
     print("3. Editar")
@@ -120,8 +122,10 @@ def menu_principal():
     turmas = recuperar_dados_arquivo("turmas")
     matriculas = recuperar_dados_arquivo("matriculas")
 
-    while True:
-        print("\n--- Sistema de Gerenciamento Escolar ---")
+    while True: 
+        print("\n################")
+        print("\nMenu Principal:")
+        print("\n################\n")
         print("1. Gerenciar Estudantes")
         print("2. Gerenciar Professores")
         print("3. Gerenciar Disciplinas")
